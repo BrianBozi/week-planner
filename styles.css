@@ -1,5 +1,10 @@
 /* Modal Box */
 
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .weeklyHeader {
   text-align: center;
 }
@@ -17,11 +22,10 @@
   justify-content: center;
 }
 
-.addEntry:hover {
-  background-color: #95bcf2;
-}
-
 .modalContainerOn {
+  top: 0;
+  left: 0;
+  align-items: center;
   position: fixed;
   background-color: rgba(35, 35, 35, 0.6);
   width: 100vw;
@@ -33,6 +37,10 @@
 }
 
 .modalContent {
+  position: fixed;
+  top: 15%;
+  left: 19%;
+  background-color: white;
   border: 1px solid black;
   width: 60%;
   height: 250px;
@@ -105,4 +113,9 @@ tr:nth-child(odd) {
 
 .move-right {
   float: right;
+}
+
+.addEntry:hover,
+.move-right:hover {
+  background-color: #95bcf2;
 }
