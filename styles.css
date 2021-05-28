@@ -1,3 +1,5 @@
+/* Modal Box */
+
 .addEntry {
   cursor: pointer;
   padding: 0.6rem 2.5rem;
@@ -18,4 +20,29 @@
 
 .text-center {
   text-align: center;
+}
+
+.modalContent {
+  border: 1px solid black;
+  width: 60%;
+  height: 250px;
+  padding-left: 20px;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.addEntry2 {
+  text-align: center;
+}
+
+textarea {
+  margin: 15px 0;
+  width: 95%;
+  height: 75px;
+}
+
+.submitButton {
+  float: right;
+  margin-right: 20px;
 }
