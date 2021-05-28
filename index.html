@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
-        <h1>Weekly Planner</h1>
-        <button>Add Entry</button>
+    <h1>Weekly Planner</h1>
+    <button class="addEntry">Add Entry</button>
     <div class="modalContainerOff">
       <div class="modalContent">
-        <h2>Add Entry</h2>
+        <h2 class="addEntry2">Add Entry</h2>
         <form>
           <label for="day">Day Of Week</label>
           <select id="day">
@@ -54,10 +56,12 @@
           </select>
           <label for="notes"></label>
           <textarea id="notes" class="notes"></textarea>
+          <button class="submitButton">Submit</button>
         </form>
       </div>
     </div>
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,21 @@
+.addEntry {
+  cursor: pointer;
+  padding: 0.6rem 2.5rem;
+  box-shadow: 4px 4px 4px black;
+  font-weight: bold;
+}
+
+.addEntry:hover {
+  background-color: #95bcf2;
+}
+
+.modalContainerOn {
+  position: fixed;
+  background-color: rgba(35, 35, 35, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
