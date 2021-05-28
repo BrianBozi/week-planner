@@ -77,5 +77,32 @@ textarea {
 }
 
 table {
-  border: 1px solid black;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 90%;
+}
+
+tr {
+  /* border-right: 1px solid black; */
+}
+
+td {
+  /* border: 1px solid black; */
+}
+
+tr:nth-child(odd) {
+  background: #eee;
+}
+
+.scheduled-heading {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.wide {
+  width: 550px;
+}
+
+.move-right {
+  float: right;
 }
