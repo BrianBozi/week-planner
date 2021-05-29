@@ -49,32 +49,56 @@ var $monday = document.querySelector('.mondayButton');
 // var $friday = document.querySelector('.fridayButton');
 // var $saturday = document.querySelector('.saturdayButton');
 var $span = document.querySelector('.day');
+var $table = document.querySelector('.a');
+
+function tableReset() {
+  $table.reset();
+}
 
 $sunday.addEventListener('click', function (event) {
   $span.textContent = 'sunday';
+
   for (var i = 0; i < data.entries.length; i++) {
-    if (data.entries[i].days === 'sunday') {
+    if (data.entries[i].days === 'sunday' && $timeOne.textContent === '') {
       $timeOne.append(data.entries[i].time);
       $descriptionOne.append(data.entries[i].notes);
-    } else {
+    } else if (data.entries[i].days === 'sunday' && $timeTwo.textContent === '') {
       $timeTwo.append(data.entries[i].time);
       $descriptionTwo.append(data.entries[i].notes);
+    } else {
+      $timeThree.append(data.entries[i].time);
+      $descriptionThree.append(data.entries[i].notes);
     }
   }
+
 });
 
 $monday.addEventListener('click', function (event) {
   $span.textContent = 'monday';
+  tableReset();
   for (var i = 0; i < data.entries.length; i++) {
-    if (data.entries[i].days === 'monday') {
+    if (data.entries[i].days === 'monday' && $timeOne.textContent === '') {
       $timeOne.append(data.entries[i].time);
       $descriptionOne.append(data.entries[i].notes);
-    } else {
+    } else if (data.entries[i].days === 'monday' && $timeTwo.textContent === '') {
       $timeTwo.append(data.entries[i].time);
       $descriptionTwo.append(data.entries[i].notes);
+    } else {
+      $timeThree.append(data.entries[i].time);
+      $descriptionThree.append(data.entries[i].notes);
     }
   }
 });
+
+// $tuesday;
+
+// $wednesday;
+
+// $thursday;
+
+// $friday;
+
+// $saturday;
 
 $form.addEventListener('submit', function (event) {
   // event.preventDefault();
