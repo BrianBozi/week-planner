@@ -41,6 +41,41 @@ var $descriptionFive = document.querySelector('.descriptionFive');
 var $descriptionSix = document.querySelector('.descriptionSix');
 var $descriptionSeven = document.querySelector('.descriptionSeven');
 var $descriptionEight = document.querySelector('.descriptionEight');
+var $sunday = document.querySelector('.sundayButton');
+var $monday = document.querySelector('.mondayButton');
+// var $tuesday = document.querySelector('.tuesdayButton');
+// var $wednesday = document.querySelector('.wednesdayButton');
+// var $thursday = document.querySelector('.thursdayButton');
+// var $friday = document.querySelector('.fridayButton');
+// var $saturday = document.querySelector('.saturdayButton');
+var $span = document.querySelector('.day');
+
+$sunday.addEventListener('click', function (event) {
+  $span.textContent = 'sunday';
+  for (var i = 0; i < data.entries.length; i++) {
+    if (data.entries[i].days === 'sunday') {
+      $timeOne.append(data.entries[i].time);
+      $descriptionOne.append(data.entries[i].notes);
+    } else {
+      $timeTwo.append(data.entries[i].time);
+      $descriptionTwo.append(data.entries[i].notes);
+    }
+  }
+});
+
+$monday.addEventListener('click', function (event) {
+  $span.textContent = 'monday';
+  for (var i = 0; i < data.entries.length; i++) {
+    if (data.entries[i].days === 'monday') {
+      $timeOne.append(data.entries[i].time);
+      $descriptionOne.append(data.entries[i].notes);
+    } else {
+      $timeTwo.append(data.entries[i].time);
+      $descriptionTwo.append(data.entries[i].notes);
+    }
+  }
+});
+
 $form.addEventListener('submit', function (event) {
   // event.preventDefault();
   var $modalContainerOn = document.querySelector('.modalContainerOn');
@@ -87,11 +122,3 @@ window.addEventListener('DOMContentLoaded', function (event) {
     }
   }
 });
-
-// function render(table) {
-//   var tbody = document.createElement('tbody');
-//   var onetr = document.createElement('tr');
-//   var td = document.createElement('td');
-//   var tdTwo = document.createElement('td');
-//   var button = document.createElement('button');
-// }
